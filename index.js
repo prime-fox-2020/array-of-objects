@@ -18,6 +18,18 @@ creatObj(`Icha`,1,`female`)
 creatObj(`Adhit`,2,`male`)
 creatObj(`Tama`,2,`male`)
 creatObj(`Rifky`,3,`male`)
-
-
 console.log(array)
+
+
+function getData(name){
+    for (let i = 0; i < array.length; i++) {
+        if(array[i].name == name){
+            return array[i]
+        }
+    }
+}
+
+console.log(getData(`Akbar`))
+console.log(getData(`Icha`))
+
+
