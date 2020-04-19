@@ -17,3 +17,9 @@ createObj('Tama', 2, 'male');
 createObj('Rifky', 3, 'male');
 
 console.log(arr);
+
+function getData(name) {
+  return arr.filter(el => el.name == name)[0];
+}
+
+console.log(getData('Icha'));
